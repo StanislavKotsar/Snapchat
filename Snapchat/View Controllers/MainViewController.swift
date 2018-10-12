@@ -34,7 +34,6 @@ class MainViewController: UIViewController {
   
   // MARK: - Navigation
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    print("in prepare for segue method")
     if let controller = segue.destination as? CameraViewController {
       cameraViewController = controller
     } else if let controller = segue.destination as? ScrollViewController {
